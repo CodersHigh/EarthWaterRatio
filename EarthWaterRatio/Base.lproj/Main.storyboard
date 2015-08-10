@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,51 +17,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Earth : Water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDN-ed-QVb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Earth : Water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDN-ed-QVb">
                                 <rect key="frame" x="16" y="227" width="568" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-yF-fIn">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-yF-fIn">
                                 <rect key="frame" x="296" y="287" width="288" height="26"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="on Earth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9y-eD-Vz3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="on Earth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9y-eD-Vz3">
                                 <rect key="frame" x="269" y="347" width="62" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Gg-te-rFe">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Gg-te-rFe">
                                 <rect key="frame" x="16" y="287" width="280" height="26"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.72941176470000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="Ufa-lc-7dl"/>
+                                    <constraint firstAttribute="height" constant="26" id="0gN-OH-ito"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Ufa-lc-7dl"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6ak-yF-fIn" firstAttribute="height" secondItem="0Gg-te-rFe" secondAttribute="height" id="VNB-IQ-OTm"/>
-                            <constraint firstAttribute="centerY" secondItem="0Gg-te-rFe" secondAttribute="centerY" id="uDD-QE-a3V"/>
+                            <constraint firstAttribute="centerY" secondItem="0Gg-te-rFe" secondAttribute="centerY" id="18K-E5-G87"/>
+                            <constraint firstItem="6ak-yF-fIn" firstAttribute="centerY" secondItem="0Gg-te-rFe" secondAttribute="centerY" id="2Dm-57-7Sj"/>
+                            <constraint firstItem="uDN-ed-QVb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ACw-RQ-5p5"/>
+                            <constraint firstItem="6ak-yF-fIn" firstAttribute="trailing" secondItem="uDN-ed-QVb" secondAttribute="trailing" id="QC1-cp-GHw"/>
+                            <constraint firstItem="0Gg-te-rFe" firstAttribute="leading" secondItem="uDN-ed-QVb" secondAttribute="leading" id="Ts8-Yj-Xgj"/>
+                            <constraint firstItem="6ak-yF-fIn" firstAttribute="height" secondItem="0Gg-te-rFe" secondAttribute="height" id="Tvg-ww-XPJ"/>
+                            <constraint firstAttribute="centerX" secondItem="q9y-eD-Vz3" secondAttribute="centerX" id="V8j-H8-A1l"/>
+                            <constraint firstAttribute="centerX" secondItem="uDN-ed-QVb" secondAttribute="centerX" id="aTI-Ja-F3E"/>
+                            <constraint firstItem="uDN-ed-QVb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gOA-7g-S3m"/>
+                            <constraint firstItem="0Gg-te-rFe" firstAttribute="top" secondItem="uDN-ed-QVb" secondAttribute="bottom" constant="31" id="pRa-cR-oKA"/>
+                            <constraint firstItem="q9y-eD-Vz3" firstAttribute="top" secondItem="0Gg-te-rFe" secondAttribute="bottom" constant="34" id="skk-HO-NRC"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="uDD-QE-a3V"/>
-                                <exclude reference="VNB-IQ-OTm"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298" y="323"/>
+            <point key="canvasLocation" x="650" y="352"/>
         </scene>
     </scenes>
 </document>
